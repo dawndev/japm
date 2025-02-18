@@ -2,12 +2,12 @@
 
 <h1 align="center">JAPM</h1>
 
-[![Github](https://img.shields.io/badge/GitHub-white.svg?style=flat-square&logo=github&logoColor=181717)](https://github.com/tagwan/japm)
-![GitHub](https://img.shields.io/github/license/tagwan/japm)
-![GitHub stars](https://img.shields.io/github/stars/tagwan/japm.svg)
-![GitHub forks](https://img.shields.io/github/forks/tagwan/japm.svg)
-![GitHub issues](https://img.shields.io/github/issues-raw/tagwan/japm?label=issues)
-![GitHub last commit](https://img.shields.io/github/last-commit/tagwan/japm.svg)
+[![Github](https://img.shields.io/badge/GitHub-white.svg?style=flat-square&logo=github&logoColor=181717)](https://github.com/dawndev/japm)
+![GitHub](https://img.shields.io/github/license/dawndev/japm)
+![GitHub stars](https://img.shields.io/github/stars/dawndev/japm.svg)
+![GitHub forks](https://img.shields.io/github/forks/dawndev/japm.svg)
+![GitHub issues](https://img.shields.io/github/issues-raw/dawndev/japm?label=issues)
+![GitHub last commit](https://img.shields.io/github/last-commit/dawndev/japm.svg)
 
 <div align="center">
 
@@ -50,7 +50,7 @@ java -javaagent:E:\\tmp\\japm-1.0.1.jar -DJapmPropFile=E:\\tmp\\japm.properties 
 ```
 
 ## Issue
-如果您有任何问题、疑问或者建议，您可以 [提交Issue](https://github.com/tagwan/japm/issues/new/choose)  ;-)
+如果您有任何问题、疑问或者建议，您可以 [提交Issue](https://github.com/dawndev/japm/issues/new/choose)  ;-)
 
 ## TODO
 - 方法耗时 ✓

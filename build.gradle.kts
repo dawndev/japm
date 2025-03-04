@@ -8,7 +8,7 @@ plugins {
     kotlin("jvm") version Versions.Kotlin apply false
 }
 
-group = "com.github.tagwan"
+group = "com.github.dawndev.japm"
 version = "1.0.1.RELEASE"
 java.sourceCompatibility = JavaVersion.VERSION_11
 
@@ -68,8 +68,8 @@ tasks {
             attributes(
                 "Implementation-Title" to project.name,
                 "Implementation-Version" to "1.0.0",
-                "Premain-Class" to "com.github.tagwan.japm.BootKt",
-                "Agent-Class" to "com.github.tagwan.japm.BootKt",
+                "Premain-Class" to "com.github.dawndev.japm.BootKt",
+                "Agent-Class" to "com.github.dawndev.japm.BootKt",
                 "Built-By" to "Espresso"
             )
         }

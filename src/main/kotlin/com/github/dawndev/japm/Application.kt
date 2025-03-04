@@ -10,38 +10,33 @@ import com.github.dawndev.japm.mgr.SystemMgr
 import org.slf4j.LoggerFactory
 import java.lang.instrument.Instrumentation
 
-/**
- * Application
- *
- * @author jdg
- */
 object Application {
 
     private val logger = LoggerFactory.getLogger(Application::class.java)
-    var state: StateEnum = StateEnum.Prepare
+    var state: StateEnum = StateEnum.PREPARE
 
     fun init() {
         // 当前的包名存一下
         ConfigMgr.init()
         MetricsMgr.init()
         SystemMgr.init()
-        state = StateEnum.Init
+        state = StateEnum.INIT
     }
 
     fun start(inst: Instrumentation) {
-        state = StateEnum.Start
+        state = StateEnum.START
         logger.info(FileUtils.openText(this.javaClass.classLoader.getResource(BANNER)?.path ?: ""))
         val transformer = ApmTransformer()
         inst.addTransformer(transformer)
-        state = StateEnum.Running
+        state = StateEnum.RUNNING
     }
 
     fun exit() {
-        state = StateEnum.Exit
+        state = StateEnum.EXIT
         logger.error("JAPM发生异常导致了退出")
     }
 }
 
-fun main() {
-    Application.init()
-}
+//fun main() {
+//    Application.init()
+//}
